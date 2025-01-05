@@ -13,6 +13,10 @@ print(*object, sep=' ', end='\n', file=sys.stdout, flush=False)
 
 其中 `*object` 前的 `*` 表示 **能够接收很多值的位置参数**。
 
+
+
+
+
 ## 2 关键字参数 Keyword Arguments
 
 `Python` 中的参数主要有两大类：
@@ -21,6 +25,12 @@ print(*object, sep=' ', end='\n', file=sys.stdout, flush=False)
 - 关键字参数（Keyword Argument）：官方文档中缩写为 `kwarg`
 
 概念：在函数定义中，带有 `=` 的是设定了默认值的参数，即 **关键字参数（Keyword Argument）**。其他参数则属于 **位置参数（Positional Argument）**。
+
+> [!tip]
+>
+> **补充说明**
+>
+> 排序函数 `sorted(iterable, *, key=None, reverse=False)`，其中的 `*` 表示关键字参数的开始，即参数 `key` 和 `reverse` 必须以 `kwarg` 形式传参，否则报 `TypeError` 类型错误。
 
 
 

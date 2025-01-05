@@ -18,4 +18,5 @@
 | `Built-in Function` | 内建函数 |
 | `Standard Library`  |  标准库  |
 |      `Module`       |   模块   |
+|       `Tuple`       |   元组   |
 
