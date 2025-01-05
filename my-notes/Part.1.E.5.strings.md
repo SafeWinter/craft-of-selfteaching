@@ -98,3 +98,32 @@ s[1:5:2] # 'yh'
 求字符 `char` 在字符串 `s` 中的索引，使用：`s.index(char)`
 
 利用 **索引** 来提取字符串这个 **有序容器** 的一个或多个元素，这个操作有个专门的术语，叫 **切片（Slicing）**。
+
+
+
+## 5 下划线在字符串中的特殊含义
+
+在 `Python` 中，单个下划线 `_` 表示一个特殊的变量，其中保存着最后一个语句或表达式的执行结果。例如（L10）：
+
+```python
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
+
+'Now is better than never.'.upper()  # 'NOW IS BETTER THAN NEVER.'
+
+# 在 Python 命令行工具之中，单个下划线，是个特殊变量；
+# 保存着最近的语句或者表达式的结果
+# 上一个 Cell 执行过后，_ 中保存着 'NOW IS BETTER THAN NEVER.'
+
+_.lower()  # 'now is better than never.'
+```
+
+
+
+## 6 str.partition()
+
+字符串分区函数 `str.partition(sep)`：
+
+Split the string at the first occurrence of *sep*, and return a 3-tuple containing the part before the separator, the separator itself, and the part after the separator. If the separator is not found, return a 3-tuple containing the string itself, followed by two empty strings.
+
+from: [python doc](https://docs.python.org/3/library/stdtypes.html#str.partition "点击跳转 Python 3 官方文档")
